@@ -1,2 +1,2 @@
-# etki
+# ETkI
 Easy Tk Interface
