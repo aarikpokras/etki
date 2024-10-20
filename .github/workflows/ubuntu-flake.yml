@@ -25,3 +25,8 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 .
+    - name: Create issue if failed
+      run: |
+        if [ "$?" -ne 0 ]; then
+          gh issue create --title "Style guide not followed" --body "See actions" --label "Flake" --assignee "aarikpokras"
+        fi
