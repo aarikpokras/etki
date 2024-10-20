@@ -28,6 +28,7 @@ jobs:
       continue-on-error: true
     - name: Create issue if failed
       run: |
-        if [ $? -ne 0 ]; then
-          gh issue create --title "Style guide not followed" --body "See actions" --label "Flake" --assignee "aarikpokras"
+        if [[ "$?" -ne 0 ]]; then
+          gh issue create --title "Style guide not followed" --body "See actions" --label "Flake" --assignee "aarikpokras" -R aarikpokras/etki
+          exit 1
         fi
