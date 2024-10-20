@@ -1,4 +1,6 @@
 # ETkI
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/aarikpokras/etki/ubuntu-flake.yml)
+
 Easy (not actually) Tk Interface
 
 To use ETkI, you need matplotlib:
