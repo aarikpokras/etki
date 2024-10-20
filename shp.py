@@ -42,6 +42,7 @@ class Rect:
 
 pth = shp.Path
 
+
 class Polygon:
   def __init__(self, vertices):
     self.vertices = vertices
