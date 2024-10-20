@@ -1,9 +1,11 @@
 [flake8]
 ignore = 
          E111,
+         # Indent is not a multiple of four
          E302,
-         E305,
+         # 2 blank lines rule
          E121
+         # Wrong hanging indent
 
 exclude = __init__.py
 max-line-length = 107
