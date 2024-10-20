@@ -39,3 +39,22 @@ class Rect:
       r = shp.FancyBboxPatch((x, y), width, height, boxS, color=color, fill=fill)
       ax.add_artist(r)
       plt.gca().set_aspect(1)
+
+pth = shp.Path
+
+class Polygon:
+  def __init__(self, vertices):
+    self.vertices = vertices
+    if (type(vertices) != list):
+      raise TypeError("Vertices should be a list")
+    else:
+      codes = [pth.MOVETO]
+      i = 0
+      while i < len(vertices) - 2: # C-style for statement, variable for the vertices list
+        codes.append(pth.LINETO)
+        i += 1
+      codes.append(pth.CLOSEPOLY)
+      path = shp.Path(vertices, codes)
+      p = shp.PathPatch(path, facecolor='black')
+      plt.gca().set_aspect(1)
+      ax.add_artist(p)
