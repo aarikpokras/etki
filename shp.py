@@ -33,8 +33,8 @@ class Rect:
       plt.gca().set_aspect(1)
     else:
       boxS = shp.BoxStyle.Round(
-      pad=0.1,
-      rounding_size=borderradius
+        pad=0.1,
+        rounding_size=borderradius
       )
       r = shp.FancyBboxPatch((x, y), width, height, boxS, color=color, fill=fill)
       ax.add_artist(r)
