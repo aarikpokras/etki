@@ -27,7 +27,7 @@ class Rect:
     self.color = color
     self.fill = fill
     self.borderradius = borderradius
-    if (borderradius == 0): # Trick the user into thinking the rounded Rect is the same shape (silly user)
+    if (borderradius == 0):  # Trick the user into thinking the rounded Rect is the same shape (silly user)
       r = shp.Rectangle((x, y), width, height, color=color, fill=fill)
       ax.add_artist(r)
       plt.gca().set_aspect(1)
@@ -50,7 +50,7 @@ class Polygon:
     else:
       codes = [pth.MOVETO]
       i = 0
-      while i < len(vertices) - 2: # C-style for statement, variable for the vertices list
+      while i < len(vertices) - 2:  # C-style for statement, variable for vertices
         codes.append(pth.LINETO)
         i += 1
       codes.append(pth.CLOSEPOLY)
