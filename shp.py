@@ -18,6 +18,7 @@ class Circle:
     ax.add_artist(c)
     plt.gca().set_aspect(1)
 
+
 class Rect:
   def __init__(self, x, y, width, height, color='black', fill=True, borderradius=0):
     self.x = x
@@ -39,6 +40,7 @@ class Rect:
       r = shp.FancyBboxPatch((x, y), width, height, boxS, color=color, fill=fill)
       ax.add_artist(r)
       plt.gca().set_aspect(1)
+
 
 pth = shp.Path
 
