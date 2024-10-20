@@ -27,6 +27,6 @@ jobs:
         flake8 .
     - name: Create issue if failed
       run: |
-        if [ "$?" -ne 0 ]; then
+        if [ $? -ne 0 ]; then
           gh issue create --title "Style guide not followed" --body "See actions" --label "Flake" --assignee "aarikpokras"
         fi
