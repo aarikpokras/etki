@@ -1,2 +1,3 @@
 [flake8]
-ignore = E111, F401
+ignore = E111
+exclude = __init__.py
