@@ -1,5 +1,4 @@
 from .plot import Line
 from .big  import go
-from .poly import Polygon
-from .shp  import Circle, Rect
+from .shp  import Circle, Rect, Polygon
 from .txt  import Text
