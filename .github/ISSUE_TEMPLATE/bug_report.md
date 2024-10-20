@@ -2,8 +2,8 @@
 name: Bug report
 about: Report something that went wrong
 title: "[Brief description of bug]"
-labels: 'bug'
-assignees: 'aarikpokras'
+labels: bug
+assignees: aarikpokras
 
 ---
 
