@@ -45,7 +45,7 @@ pth = shp.Path
 class Polygon:
   def __init__(self, vertices):
     self.vertices = vertices
-    if (type(vertices) != list):
+    if (type(vertices) is not list):
       raise TypeError("Vertices should be a list")
     else:
       codes = [pth.MOVETO]
