@@ -45,7 +45,9 @@ class Rect:
       plt.gca().set_aspect(1)
 
   def __str__(self):
-    return f'Rect({self.x}, {self.y}, {self.width}, {self.height}, color={self.color}, fill={self.fill}, borderradius={self.borderradius})'
+    return f"""Rect({self.x}, {self.y}, {self.width}, {self.height},
+    color={self.color}, fill={self.fill}, borderradius={self.borderradius})"""
+
 
 pth = shp.Path
 
@@ -65,6 +67,6 @@ class Polygon:
       p = shp.PathPatch(path, facecolor='black')
       plt.gca().set_aspect(1)
       ax.add_artist(p)
-      
+
   def __str__(self):
     return f'Polygon({self.vertices})'
