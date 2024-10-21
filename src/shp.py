@@ -17,6 +17,7 @@ class Circle:
     c = shp.Circle((self.x, self.y), self.radius, color=self.color, fill=self.fill)
     ax.add_artist(c)
     plt.gca().set_aspect(1)
+    
   def __str__(self):
     return f'Circle({self.x}, {self.y}, {self.radius}, color={self.color}, fill={self.fill})'
 
@@ -42,6 +43,7 @@ class Rect:
       r = shp.FancyBboxPatch((x, y), width, height, boxS, color=color, fill=fill)
       ax.add_artist(r)
       plt.gca().set_aspect(1)
+      
   def __str__(self):
     return f'Rect({self.x}, {self.y}, {self.width}, {self.height}, color={self.color}, fill={self.fill}, borderradius={self.borderradius})'
 
