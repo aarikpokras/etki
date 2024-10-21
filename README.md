@@ -1,5 +1,5 @@
 # ETkI
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/aarikpokras/etki/ubuntu-flake.yml)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/aarikpokras/etki/ubuntu-test.yml)
 ![GitHub License](https://img.shields.io/github/license/aarikpokras/etki)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/aarikpokras/etki)
 
