@@ -7,5 +7,5 @@ ignore =
          E121
          # Wrong hanging indent
 
-exclude = tests
+exclude = __init__.py, tests
 max-line-length = 107
