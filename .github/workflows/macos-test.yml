@@ -1,4 +1,4 @@
-name: macOS Test
+name: macOS pytest
 
 on:
   push:
