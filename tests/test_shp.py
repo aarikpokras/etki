@@ -1,8 +1,13 @@
 import pytest
-from .shp import Rect, Circle, Polygon
+import sys
+import os
+
+sys.path.append(os.getcwd())
+
+import shp
 
 def test_rect():
-  s = Rect(0.4, 0.3, 0.1, 0.24, color='green', fill=False, borderradius=0.1)
+  s = shp.Rect(0.4, 0.3, 0.1, 0.24, color='green', fill=False, borderradius=0.1)
 
   assert s.x == 0.4
   assert s.y == 0.3
@@ -13,7 +18,7 @@ def test_rect():
   assert s.borderradius == 0.1
 
 def test_circle():
-  s = Circle(0.1, 0.3, 0.2, color='red', fill=True)
+  s = shp.Circle(0.1, 0.3, 0.2, color='red', fill=True)
 
   assert s.x == 0.1
   assert s.y == 0.3
@@ -22,7 +27,7 @@ def test_circle():
   assert s.fill == True
 
 def test_poly():
-  s = Polygon(
+  s = shp.Polygon(
     [
       (1, 1),
       (2, 1),
