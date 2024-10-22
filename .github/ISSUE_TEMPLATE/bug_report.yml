@@ -11,6 +11,23 @@ body:
      description: Describe what happened
    validations:
      required: true
+ - type: textarea
+   attributes:
+     label: Steps to reproduce
+     description: Describe how to reproduce the bug.
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Expected behavior
+     description: What was supposed to happen?
+ - type: textarea
+   attributes:
+     label: Screenshots
+     description: Are there screenshots that show the bug?
+ - type: markdown
+   attributes:
+     value: Thank you!
  
 
 #**Describe the bug**
