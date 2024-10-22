@@ -1,0 +1,3 @@
+- [ ] Add face color option to Polygon
+- [ ] Auto-xlim and ylim
+- [ ] Inherit draw function from class `Shape`?
