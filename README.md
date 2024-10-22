@@ -3,7 +3,7 @@
 ![GitHub License](https://img.shields.io/github/license/aarikpokras/etki)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/aarikpokras/etki)
 
-Easy (not actually) Tk Interface
+Easy (not actually) Tk Interface based on matplotlib
 
 To use ETkI, you need matplotlib:
 
