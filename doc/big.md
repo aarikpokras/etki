@@ -1,6 +1,4 @@
----
-title: big
----
+# big
 
 Big is the module used to create plots.
 
