@@ -7,42 +7,43 @@ fig, ax = plt.subplots()
 
 # Self variables allow the user to reference them, e.g. shapevariable.property
 
-class Circle:
-  def __init__(self, x, y, radius, color='black', fill=True):
+class Shape:
+  def adda(self, shapevar):
+    ax.add_artist(shapevar)
+    plt.gca().set_aspect(1)
+  def setSelf(self, x, y, color, fill, radius=None, width=None, height=None, borderradius=None):
     self.x = x
     self.y = y
-    self.radius = radius
     self.color = color
     self.fill = fill
+    self.radius = radius
+    self.width = width
+    self.height = height
+    self.borderradius = borderradius
+
+class Circle(Shape):
+  def __init__(self, x, y, radius, color='black', fill=True):
+    self.setSelf(x, y, color, fill, radius)
     c = shp.Circle((self.x, self.y), self.radius, color=self.color, fill=self.fill)
-    ax.add_artist(c)
-    plt.gca().set_aspect(1)
+    self.adda(c)
 
   def __str__(self):
     return f'Circle({self.x}, {self.y}, {self.radius}, color={self.color}, fill={self.fill})'
 
 
-class Rect:
+class Rect(Shape):
   def __init__(self, x, y, width, height, color='black', fill=True, borderradius=0):
-    self.x = x
-    self.y = y
-    self.width = width
-    self.height = height
-    self.color = color
-    self.fill = fill
-    self.borderradius = borderradius
+    self.setSelf(x, y, color, fill, width=width, height=height, borderradius=borderradius)
     if (borderradius == 0):  # Trick the user into thinking the rounded Rect is the same shape (silly user)
       r = shp.Rectangle((x, y), width, height, color=color, fill=fill)
-      ax.add_artist(r)
-      plt.gca().set_aspect(1)
+      self.adda(r)
     else:
       boxS = shp.BoxStyle.Round(
         pad=0.1,
         rounding_size=borderradius
       )
       r = shp.FancyBboxPatch((x, y), width, height, boxS, color=color, fill=fill)
-      ax.add_artist(r)
-      plt.gca().set_aspect(1)
+      self.adda(r)
 
   def __str__(self):
     return f"""Rect({self.x}, {self.y}, {self.width}, {self.height},
@@ -51,9 +52,11 @@ class Rect:
 
 pth = shp.Path
 
-class Polygon:
+class Polygon(Shape):
   def __init__(self, vertices, fillcolor='black', bordercolor='black'):
     self.vertices = vertices
+    self.fillcolor = fillcolor
+    self.bordercolor = bordercolor
     if (type(vertices) is not list):
       raise TypeError("Vertices should be a list")
     else:
@@ -65,8 +68,7 @@ class Polygon:
       codes.append(pth.CLOSEPOLY)
       path = shp.Path(vertices, codes)
       p = shp.PathPatch(path, facecolor=fillcolor, edgecolor=bordercolor)
-      plt.gca().set_aspect(1)
-      ax.add_artist(p)
+      self.adda(p)  # see if works
 
   def __str__(self):
     return f'Polygon({self.vertices})'
