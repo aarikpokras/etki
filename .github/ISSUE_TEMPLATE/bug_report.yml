@@ -1,0 +1,19 @@
+---
+name: Bug report
+about: Report something that went wrong
+title: "[Brief description of bug]"
+labels: bug
+assignees: aarikpokras
+body:
+ - type: textarea
+   attributes:
+     label: Bug summary
+     description: Describe what happened
+ 
+
+#**Describe the bug**
+#Reproduce
+#**Expected behavior**
+#**Screenshots**
+#Desktop - OS, py version, etc.
+#Additional context
