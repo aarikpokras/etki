@@ -11,6 +11,7 @@ class Shape:
   def adda(self, shapevar):
     ax.add_artist(shapevar)
     plt.gca().set_aspect(1)
+
   def setSelf(self, x, y, color, fill, radius=None, width=None, height=None, borderradius=None):
     self.x = x
     self.y = y
