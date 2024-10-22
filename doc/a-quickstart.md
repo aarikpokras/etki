@@ -1,5 +1,7 @@
 # Quickstart
 
+![Photo of ETkI](https://bottlenose-nova-acapella.glitch.me/etki-pb.png)
+
 **Important:** *To make a line, you must import the `etki.plot` module separately.*
 
 ### Importing all modules (May cause some bugs)
