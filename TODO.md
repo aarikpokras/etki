@@ -1,3 +1,3 @@
-- [ ] Add face color option to Polygon
+- [x] Add face color option to Polygon - CHECK
 - [ ] Auto-xlim and ylim
 - [ ] Inherit draw function from class `Shape`?
