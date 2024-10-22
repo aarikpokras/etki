@@ -1,3 +1,4 @@
 - [x] Add face/edge color option to Polygon - CHECK
+  - [x] Update docs in wiki
 - [ ] Auto-xlim and ylim
 - [ ] Inherit draw function from class `Shape`?
