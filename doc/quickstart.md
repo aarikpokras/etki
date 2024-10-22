@@ -1,4 +1,4 @@
-## Importing
+# Importing
 
 **Important:** *To make a line, you must import the `etki.plot` module separately.*
 
