@@ -21,10 +21,14 @@ body:
    attributes:
      label: Expected behavior
      description: What was supposed to happen?
+   validations:
+     required: true
  - type: textarea
    attributes:
      label: Screenshots
      description: Are there screenshots that show the bug?
+   validations:
+     required: true
  - type: markdown
    attributes:
      value: Thank you!
