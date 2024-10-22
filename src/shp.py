@@ -52,7 +52,7 @@ class Rect:
 pth = shp.Path
 
 class Polygon:
-  def __init__(self, vertices):
+  def __init__(self, vertices, fillcolor='black', bordercolor='black'):
     self.vertices = vertices
     if (type(vertices) is not list):
       raise TypeError("Vertices should be a list")
@@ -64,7 +64,7 @@ class Polygon:
         i += 1
       codes.append(pth.CLOSEPOLY)
       path = shp.Path(vertices, codes)
-      p = shp.PathPatch(path, facecolor='black')
+      p = shp.PathPatch(path, facecolor=fillcolor, edgecolor=bordercolor)
       plt.gca().set_aspect(1)
       ax.add_artist(p)
 
