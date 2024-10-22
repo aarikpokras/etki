@@ -4,8 +4,7 @@
 
 **Important:** _To make a line, you must import the `etki.plot` module separately._
 
-### Importing all modules (May cause some bugs)
-
+### Importing all modules
 To import ETkI, with etki in your working directory, use:
 
 ```py
