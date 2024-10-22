@@ -1,3 +1,5 @@
+# plot
+
 The plot module allows the user to draw lines.
 
 ## `Line`
