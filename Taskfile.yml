@@ -1,0 +1,11 @@
+version: '3'
+
+tasks:
+  default:
+    desc: "Set up ETkI for use"
+    cmds:
+      - mv src/* .
+      - rm *.md
+      - rm LICENSE
+      - rm -rf tests
+      - rm pyproject.toml
