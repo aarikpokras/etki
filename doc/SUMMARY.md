@@ -14,6 +14,6 @@
 
 ***
 
-## 
+## Creating the Plot
 
 * [big](big.md)
