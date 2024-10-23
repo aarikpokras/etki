@@ -9,6 +9,7 @@
 * [big](drawing/mustdoshp.md)
 * [shp](drawing/c-shp/README.md)
   * [etki.shp.Rect](drawing/c-shp/rect.md)
+  * [etki.shp.Circle](drawing/c-shp/circle.md)
 * [plot](drawing/plot.md)
 * [txt](drawing/txt.md)
 
