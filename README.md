@@ -1,7 +1,7 @@
 # ETkI
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/aarikpokras/etki/ubuntu-test.yml)
-![GitHub License](https://img.shields.io/github/license/aarikpokras/etki)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/aarikpokras/etki)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/aarikpokras/etki/ubuntu-test.yml?style=flat-square)
+![GitHub License](https://img.shields.io/github/license/aarikpokras/etki?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/aarikpokras/etki?style=flat-square)
 
 Easy (not actually) Tk Interface based on matplotlib
 
