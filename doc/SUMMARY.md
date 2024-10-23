@@ -8,7 +8,7 @@
 
 * [big](drawing/mustdoshp.md)
 * [shp](drawing/c-shp/README.md)
-  * [Page 1](drawing/c-shp/page-1.md)
+  * [etki.shp.Rect](drawing/c-shp/rect.md)
 * [plot](drawing/plot.md)
 * [txt](drawing/txt.md)
 
