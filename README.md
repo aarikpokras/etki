@@ -12,3 +12,14 @@ $ python3 -m pip install matplotlib
 ```
 
 Documentation can be found [here](https://etki.gitbook.io).
+
+To prepare ETkI, you can use make or [task](https://taskfile.dev/installation/).\
+Run either
+```
+make
+```
+or
+
+```
+task
+```
