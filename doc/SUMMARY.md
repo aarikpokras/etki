@@ -4,15 +4,13 @@
 
 * [Quickstart](README.md)
 
-***
-
 ## Drawing
+
 * [big](mustdoshp.md)
-* [shp](c-shp.md)
+* [shp](drawing/c-shp/README.md)
+  * [Page 1](drawing/c-shp/page-1.md)
 * [plot](plot.md)
 * [txt](txt.md)
-
-***
 
 ## Creating the Plot
 
