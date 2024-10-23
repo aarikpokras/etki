@@ -20,6 +20,7 @@ If it causes a bug, please make an [issue](https://github.com/aarikpokras/etki/i
 | Make a shape (rectangle, path, etc.) | `etki.shp`  |
 | Make a text label                    | `etki.txt`  |
 | Make a line                          | `etki.plot` |
+| Draw the plot                        | `etki.big`  |
 
 The modules must be imported individually, e.g.:\
 To draw a circle and a text label, one would do the following:
