@@ -21,8 +21,8 @@ If it causes a bug, please make an [issue](https://github.com/aarikpokras/etki/i
 | Make a text label                    | `etki.txt`  |
 | Make a line                          | `etki.plot` |
 
-You must import these modules individually, e.g.:\
-If I was drawing a circle and a text label, I would do the following:
+The modules must be imported individually, e.g.:\
+To draw a circle and a text label, one would do the following:
 
 ```py
 import etki.shp  # For the circle
