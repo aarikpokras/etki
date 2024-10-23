@@ -25,6 +25,6 @@ You must import these modules individually, e.g.:\
 If I was drawing a circle and a text label, I would do the following:
 
 ```py
-import etki.shp # For the circle
-import etki.txt # For the label
+import etki.shp  # For the circle
+import etki.txt  # For the label
 ```
