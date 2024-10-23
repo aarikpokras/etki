@@ -6,12 +6,12 @@
 
 ## Drawing
 
-* [big](mustdoshp.md)
+* [big](drawing/mustdoshp.md)
 * [shp](drawing/c-shp/README.md)
   * [Page 1](drawing/c-shp/page-1.md)
-* [plot](plot.md)
-* [txt](txt.md)
+* [plot](drawing/plot.md)
+* [txt](drawing/txt.md)
 
 ## Creating the Plot
 
-* [big](big.md)
+* [big](creating-the-plot/big.md)
