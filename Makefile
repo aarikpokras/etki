@@ -6,3 +6,6 @@ prepare:
 	rmdir src
 	rm pyproject.toml
 	rm .flake8
+clean:
+	rm Makefile
+	rm Taskfile.yml
