@@ -10,7 +10,7 @@ tasks:
       - rm -rf tests
       - rm pyproject.toml
   clean:
-    desc: "Remove everything except library files"
+    desc: "Remove everything except library files - run this after task."
     cmds:
       - rm Makefile
       - rm Taskfile.yml
