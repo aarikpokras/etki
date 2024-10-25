@@ -3,3 +3,4 @@
   - [ ] Add `rotateAngle` arg to all shapes
 - [ ] Add border and fill colors with `faceColor` and `edgeColor`
 - [ ] Auto-xlim and ylim
+- [ ] Add `color` and other universal args to `**kwargs`?
