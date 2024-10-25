@@ -3,4 +3,5 @@
 - [x] Inherit draw function from class `Shape`?
 - [ ] Add `rotateAngle` to `setSelf`
   - [ ] Add `rotateAngle` arg to all shapes
+- [ ] Add border and fill colors with `faceColor` and `edgeColor`
 - [ ] Auto-xlim and ylim
