@@ -9,3 +9,8 @@ tasks:
       - rm LICENSE
       - rm -rf tests
       - rm pyproject.toml
+  clean:
+    desc: "Remove everything that's not library files"
+    cmds:
+      - rm Makefile
+      - rm Taskfile.yml
