@@ -1,4 +1,6 @@
 - [x] Add face/edge color option to Polygon - CHECK
   - [x] Update docs in wiki
+- [x] Inherit draw function from class `Shape`?
+- [ ] Add `rotateAngle` to `setSelf`
+  - [ ] Add `rotateAngle` arg to all shapes
 - [ ] Auto-xlim and ylim
-- [ ] Inherit draw function from class `Shape`?
