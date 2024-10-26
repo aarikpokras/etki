@@ -5,13 +5,10 @@
 
 Easy (not actually) Tk Interface based on matplotlib
 
-To use ETkI, you need matplotlib:
-
-```console
-$ python3 -m pip install matplotlib
+To download ETkI:
+```shell
+$ git clone https://github.com/aarikpokras/etki.git
 ```
-
-Documentation can be found [here](https://etki.gitbook.io).
 
 To prepare ETkI, you can use make or [task](https://taskfile.dev/installation/).\
 Run either
@@ -23,3 +20,11 @@ or
 ```
 task
 ```
+
+To use ETkI, you need matplotlib:
+
+```console
+$ python3 -m pip install matplotlib
+```
+
+Documentation can be found [here](https://etki.gitbook.io).
