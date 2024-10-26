@@ -77,7 +77,7 @@ class Polygon(Shape):
 
 class Oval(Shape):
   def __init__(self, x, y, width, height, color='black', fill=True, rotateAngle=0):
-    self.setSelf(x, y, width, height)
+    self.setSelf(x, y, width=width, height=height, color=color, fill=fill)
     self.rotateAngle = rotateAngle
     o = shp.Ellipse((x, y), width, height, angle=rotateAngle, color=color, fill=fill)
     self.adda(o)
