@@ -6,6 +6,8 @@ Currently, the shapes include:
 * Circles
 * Rectangles
 * Rounded rectangles
+* Custom Polygons
+* Ovals
 
 ## Usage
 To create shapes, use:
