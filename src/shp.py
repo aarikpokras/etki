@@ -69,7 +69,15 @@ class Polygon(Shape):
       codes.append(pth.CLOSEPOLY)
       path = shp.Path(vertices, codes)
       p = shp.PathPatch(path, facecolor=fillcolor, edgecolor=bordercolor)
-      self.adda(p)  # see if works
+      self.adda(p)
 
   def __str__(self):
     return f'Polygon({self.vertices})'
+
+
+class Oval(Shape):
+  def __init__(self, x, y, width, height, color='black', fill=True, rotateAngle=0):
+    self.setSelf(x, y, width, height)
+    self.rotateAngle = rotateAngle
+    o = shp.Ellipse((x, y), width, height, angle=rotateAngle, color=color, fill=fill)
+    self.adda(o)
