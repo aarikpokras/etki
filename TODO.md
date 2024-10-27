@@ -4,3 +4,4 @@
 - [ ] Add border and fill colors with `faceColor` and `edgeColor`
 - [ ] Consolidate Makefile and Taskfile `clean`
 - [ ] Auto-xlim and ylim (maybe)
+- [ ] Make pages in docs for all-shape options?
