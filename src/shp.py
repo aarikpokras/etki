@@ -12,7 +12,7 @@ class Shape:
     ax.add_artist(shapevar)
     plt.gca().set_aspect(1)
 
-  def setSelf(self, x, y, color, fill, radius=None, width=None, height=None, borderradius=None):
+  def setSelf(self, x, y, color, fill, radius=None, width=None, height=None, borderradius=None, rotateAngle=0):
     self.x = x
     self.y = y
     self.color = color
@@ -21,6 +21,7 @@ class Shape:
     self.width = width
     self.height = height
     self.borderradius = borderradius
+    self.rotateAngle = rotateAngle
 
 class Circle(Shape):
   def __init__(self, x, y, radius, color='black', fill=True):
@@ -33,10 +34,10 @@ class Circle(Shape):
 
 
 class Rect(Shape):
-  def __init__(self, x, y, width, height, color='black', fill=True, borderradius=0):
-    self.setSelf(x, y, color, fill, width=width, height=height, borderradius=borderradius)
+  def __init__(self, x, y, width, height, color='black', fill=True, borderradius=0, rotateAngle=0):
+    self.setSelf(x, y, color, fill, width=width, height=height, borderradius=borderradius, rotateAngle=rotateAngle)
     if (borderradius == 0):  # Trick the user into thinking the rounded Rect is the same shape (silly user)
-      r = shp.Rectangle((x, y), width, height, color=color, fill=fill)
+      r = shp.Rectangle((x, y), width, height, color=color, fill=fill, angle=rotateAngle)
       self.adda(r)
     else:
       boxS = shp.BoxStyle.Round(
@@ -77,7 +78,6 @@ class Polygon(Shape):
 
 class Oval(Shape):
   def __init__(self, x, y, width, height, color='black', fill=True, rotateAngle=0):
-    self.setSelf(x, y, width=width, height=height, color=color, fill=fill)
-    self.rotateAngle = rotateAngle
+    self.setSelf(x, y, width=width, height=height, color=color, fill=fill, rotateAngle=rotateAngle)
     o = shp.Ellipse((x, y), width, height, angle=rotateAngle, color=color, fill=fill)
     self.adda(o)
