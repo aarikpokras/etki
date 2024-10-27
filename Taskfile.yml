@@ -14,3 +14,4 @@ tasks:
     cmds:
       - rm Makefile
       - rm Taskfile.yml
+      - rmdir src
