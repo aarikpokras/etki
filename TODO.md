@@ -1,6 +1,6 @@
 - [x] Inherit draw function from class `Shape`?
 - [ ] Add `rotateAngle` to `setSelf`
-  - [ ] Add `rotateAngle` arg to all shapes
+  - [x] Add `rotateAngle` arg to all (or applicable) shapes
 - [ ] Add border and fill colors with `faceColor` and `edgeColor`
 - [ ] Auto-xlim and ylim
 - [ ] Add `color` and other universal args to `**kwargs`?
