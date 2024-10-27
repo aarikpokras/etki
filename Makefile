@@ -11,3 +11,4 @@ clean:
 	rm Taskfile.yml
 	rm Makefile
 	rmdir src
+	rm -r doc
