@@ -3,7 +3,7 @@
 
 Creates a rectangle.
 ```py
-class etki.shp.Rect(x, y, width, height, *, color='black', fill=True, borderradius=0)
+class etki.shp.Rect(x, y, width, height, *, color='black', fill=True, borderradius=0, rotateAngle=0)
 ```
 The origin for this shape is the bottom-left.
 |Argument|Purpose|Type|Note|
@@ -15,3 +15,4 @@ The origin for this shape is the bottom-left.
 |`color`|Sets the color of the Rect|str|Optional|
 |`fill`|Sets whether `color` is the border color (False) or the fill color (True)|bool|Optional|
 |`borderradius`|Sets the roundness of the corners of the rect. Also adds 0.1 units of padding|float|Optional|
+|`rotateAngle`|Sets the angle counter-clockwise|float|Optional|
