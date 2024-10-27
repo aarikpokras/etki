@@ -2,6 +2,6 @@
 - [ ] Add `rotateAngle` to `setSelf`
   - [x] Add `rotateAngle` arg to all (or applicable) shapes
 - [ ] Add border and fill colors with `faceColor` and `edgeColor`
-- [ ] Auto-xlim and ylim
+- [ ] Auto-xlim and ylim (maybe)
 - [ ] Add `color` and other universal args to `**kwargs`?
 - [ ] Consolidate Makefile and Taskfile `clean`
