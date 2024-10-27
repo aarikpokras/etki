@@ -21,6 +21,8 @@ or
 task
 ```
 
+Afterwards, you should use `make clean` or `task clean`.
+
 To use ETkI, you need matplotlib:
 
 ```console
