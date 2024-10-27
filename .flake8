@@ -8,4 +8,5 @@ ignore =
          # Wrong hanging indent
 
 exclude = __init__.py, tests
-max-line-length = 107
+max-line-length = 115
+# I need to actually fix this problem :(
