@@ -3,7 +3,7 @@
 
 Creates an oval of a specified height and width.
 ```py
-class etki.shp.Oval(x, y, width, height, *, color='black', fill=True, rotateAngle=0)
+class etki.shp.Oval(x, y, width, height, *, fillcolor='black', bordercolor='black', rotateAngle=0)
 ```
 The origin of this shape is the center.
 |Argument|Purpose|Type|Note|
@@ -12,6 +12,6 @@ The origin of this shape is the center.
 |`y`|Sets how far from the bottom the Oval is|float|
 |`width`|Sets how wide the Oval is from the center|float|
 |`height`|Sets how high the Oval is from the center|float|
-|`color`|Sets the color of the Oval|str|Optional|
-|`fill`|Sets whether `color` is the border color (False) or the fill color (True)|bool|Optional|
+|`fillcolor`|Sets the fill color of the Circle|str|Optional|
+|`bordercolor`|Sets the border color of the Circle|str|Optional|
 |`rotateAngle`|Sets the angle counter-clockwise|float|Optional|
