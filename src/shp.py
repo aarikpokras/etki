@@ -86,4 +86,5 @@ class Oval(Shape):
     self.adda(o)
 
   def __str__(self):
-    return f"""Oval({self.x}, {self.y}, {self.width}, {self.height}, fillcolor={self.fillcolor}, bordercolor={self.bordercolor}, rotateAngle={self.rotateAngle})"""
+    return f"""Oval({self.x}, {self.y}, {self.width}, {self.height}, fillcolor={self.fillcolor},
+    bordercolor={self.bordercolor}, rotateAngle={self.rotateAngle})"""
