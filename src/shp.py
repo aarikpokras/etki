@@ -73,11 +73,11 @@ class Polygon(Shape):
       self.adda(p)
 
   def __str__(self):
-    return f'Polygon({self.vertices})'
+    return f'Polygon({self.vertices}, fillcolor={self.fillcolor}, bordercolor={self.bordercolor})'
 
 
 class Oval(Shape):
   def __init__(self, x, y, width, height, fillcolor='black', bordercolor='black', rotateAngle=0):
-    self.setSelf(x, y, width=width, height=height, color=color, fill=fill, rotateAngle=rotateAngle)
+    self.setSelf(x, y, width=width, height=height, fillcolor=fillcolor, bordercolor=bordercolor, rotateAngle=rotateAngle)
     o = shp.Ellipse((x, y), width, height, angle=rotateAngle, edgecolor=bordercolor, facecolor=fillcolor)
     self.adda(o)
