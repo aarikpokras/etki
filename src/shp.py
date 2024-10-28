@@ -13,7 +13,7 @@ class Shape:
     plt.gca().set_aspect(1)
 
   def setSelf(self, x, y, fillcolor, bordercolor, radius=None, width=None, height=None, borderradius=None,
-  rotateAngle=0):
+              rotateAngle=0):
     self.x = x
     self.y = y
     self.bordercolor = bordercolor
@@ -36,8 +36,8 @@ class Circle(Shape):
 
 class Rect(Shape):
   def __init__(self, x, y, width, height, fillcolor='black', bordercolor='black', borderradius=0, rotateAngle=0):
-    self.setSelf(x, y, width=width, height=height, bordercolor=bordercolor, fillcolor=fillcolor, 
-    borderradius=borderradius, rotateAngle=rotateAngle)
+    self.setSelf(x, y, width=width, height=height, bordercolor=bordercolor, fillcolor=fillcolor,
+                 borderradius=borderradius, rotateAngle=rotateAngle)
     if (borderradius == 0):
       r = shp.Rectangle((x, y), width, height, facecolor=fillcolor, edgecolor=bordercolor, angle=rotateAngle)
       self.adda(r)
@@ -80,8 +80,8 @@ class Polygon(Shape):
 
 class Oval(Shape):
   def __init__(self, x, y, width, height, fillcolor='black', bordercolor='black', rotateAngle=0):
-    self.setSelf(x, y, width=width, height=height, fillcolor=fillcolor, bordercolor=bordercolor, 
-    rotateAngle=rotateAngle)
+    self.setSelf(x, y, width=width, height=height, fillcolor=fillcolor, bordercolor=bordercolor,
+                 rotateAngle=rotateAngle)
     o = shp.Ellipse((x, y), width, height, angle=rotateAngle, edgecolor=bordercolor, facecolor=fillcolor)
     self.adda(o)
 
