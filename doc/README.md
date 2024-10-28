@@ -1,6 +1,6 @@
 # Quickstart
 
-![Photo of ETkI](https://bottlenose-nova-acapella.glitch.me/etki-pb.png)
+![Photo of ETkI](https://raw.githubusercontent.com/aarikpokras/etki/refs/heads/master/doc/assets/etki-pb.png)
 
 **Important:** _To make a line, you must import the `etki.plot` module separately._
 
