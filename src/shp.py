@@ -81,3 +81,6 @@ class Oval(Shape):
     self.setSelf(x, y, width=width, height=height, fillcolor=fillcolor, bordercolor=bordercolor, rotateAngle=rotateAngle)
     o = shp.Ellipse((x, y), width, height, angle=rotateAngle, edgecolor=bordercolor, facecolor=fillcolor)
     self.adda(o)
+
+  def __str__(self):
+    return f"""Oval({self.x}, {self.y}, {self.width}, {self.height}, fillcolor={self.fillcolor}, bordercolor={self.bordercolor}, rotateAngle={self.rotateAngle})"""
