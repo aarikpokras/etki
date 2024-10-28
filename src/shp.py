@@ -31,12 +31,12 @@ class Circle(Shape):
     self.adda(c)
 
   def __str__(self):
-    return f'Circle({self.x}, {self.y}, {self.radius}, color={self.color}, fill={self.fill})'
+    return f'Circle({self.x}, {self.y}, {self.radius}, fillcolor={self.fillcolor}, bordercolor={self.bordercolor})'
 
 
 class Rect(Shape):
   def __init__(self, x, y, width, height, fillcolor='black', bordercolor='black', borderradius=0, rotateAngle=0):
-    self.setSelf(x, y, width=width, height=height, bordercolor=bordercolor, fillcolor=fillcolor,
+    self.setSelf(x, y, bordercolor=bordercolor, fillcolor=fillcolor, width=width, height=height,
                  borderradius=borderradius, rotateAngle=rotateAngle)
     if (borderradius == 0):
       r = shp.Rectangle((x, y), width, height, facecolor=fillcolor, edgecolor=bordercolor, angle=rotateAngle)
@@ -59,7 +59,7 @@ pth = shp.Path
 class Polygon(Shape):
   def __init__(self, vertices, fillcolor='black', bordercolor='black'):
     self.vertices = vertices
-    self.fillcolor = fillcolor
+    self.fillcolor = fillcolor  # Maybe add setSelf here
     self.bordercolor = bordercolor
     if (type(vertices) is not list):
       raise TypeError("Vertices should be a list")
