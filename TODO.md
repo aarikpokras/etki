@@ -4,6 +4,7 @@
 - [x] Add border and fill colors with `facecolor` and `edgecolor`
   - [x] Update docs accordingly
 - [x] Add `__str__` function to `Oval`
+- [ ] Border width
 - [ ] Add hatching?
 - [ ] Add `__str__` testing
 - [ ] Auto-xlim and ylim?
